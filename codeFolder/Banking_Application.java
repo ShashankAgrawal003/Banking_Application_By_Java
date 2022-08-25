@@ -1,6 +1,6 @@
 import java.util.*;
 public class BankingApplication{
-    public static void main(String args){
+    public static void main(String args[]){
         BankAccount obj=new BankAccount("shanky","SH003");
         obj.showMenu();
     }
