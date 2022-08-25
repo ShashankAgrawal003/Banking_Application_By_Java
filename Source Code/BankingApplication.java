@@ -100,6 +100,6 @@ class BankAccount{
             System.out.println("*****************************************");
             System.out.println("ThankYou for using our services");
             System.out.println("*****************************************");
-        }while(option!='E');
+        } while(option!='E');
     }
 }
