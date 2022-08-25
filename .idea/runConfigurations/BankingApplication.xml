@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="BankingApplication" type="Java Scratch" singleton="false" nameIsGenerated="true">
+    <option name="MAIN_CLASS_NAME" value="BankingApplication" />
+    <module name="Banking_Application_By_Java" />
+    <option name="SCRATCH_FILE_URL" value="file://$PROJECT_DIR$/Source Code/BankingApplication.java" />
+    <shortenClasspath name="NONE" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

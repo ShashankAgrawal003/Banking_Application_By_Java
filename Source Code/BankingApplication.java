@@ -1,7 +1,7 @@
 import java.util.*;
-public class BankingApplication{
-    public static void main(String args[]){
-        BankAccount obj=new BankAccount("shanky","SH003");
+class BankingApplication{
+    public static void main(String[] args){
+        BankAccount obj=new BankAccount("Shashank","SH003");
         obj.showMenu();
     }
 }
@@ -46,7 +46,7 @@ class BankAccount{
         Scanner scanner=new Scanner(System.in);
         System.out.println("Welcome "+ customerName);
         System.out.println("Your Id is "+ customerId);
-        System.out.println("\n");
+        System.out.println();
         System.out.println("A. Check Balance");
         System.out.println("B. Deposit");
         System.out.println("C. Withdraw");
@@ -57,40 +57,49 @@ class BankAccount{
             System.out.println("Enter Your Option");
             System.out.println("------------------------------------------");
             option=scanner.next().charAt(0);
-            System.out.println("\n");
             switch (option) {
-                case 'A' -> {
-                    System.out.println("-----------------------------------");
-                    System.out.println("balance = " + currentBalance);
-                    System.out.println("-----------------------------------");
-                    System.out.println("\n");
+                case 'A': {
+                    System.out.println("-----------------------------------------");
+                    System.out.println("Current Balance = " + currentBalance);
+                    System.out.println("-----------------------------------------");
+                    System.out.println();
+                    break;
                 }
-                case 'B' -> {
-                    System.out.println("-----------------------------------");
+                case 'B' : {
+                    System.out.println("-----------------------------------------");
                     System.out.println("Enter the amount to be deposited");
-                    System.out.println("-----------------------------------");
+                    System.out.println("-----------------------------------------");
                     amount = scanner.nextInt();
                     deposit(amount);
-                    System.out.println("\n");
+                    System.out.println();
+                    break;
                 }
-                case 'C' -> {
-                    System.out.println("-----------------------------------");
+                case 'C' :{
+                    System.out.println("-----------------------------------------");
                     System.out.println("Enter the amount to be withdrawn");
-                    System.out.println("-----------------------------------");
+                    System.out.println("-----------------------------------------");
                     amount = scanner.nextInt();
                     withdraw(amount);
-                    System.out.println("\n");
+                    System.out.println();
+                    break;
                 }
-                case 'D' -> {
-                    System.out.println("------------------------------------");
+                case 'D' : {
+                    System.out.println("-----------------------------------------");
                     getPreviousTransactions();
-                    System.out.println("------------------------------------");
-                    System.out.println("\n");
+                    System.out.println("-----------------------------------------");
+                    System.out.println();
+                    break;
                 }
-                case 'E' -> System.out.println("************");
-                default -> System.out.println("Invalid Option!. Please Try Again");
+                case 'E' :
+                    break;
+
+                default :
+                    System.out.println("Invalid Option!. Please Try Again");
+                    break;
             }
+            System.out.println("*****************************************");
             System.out.println("ThankYou for using our services");
+            System.out.println("*****************************************");
         }while(option!='E');
     }
 }
